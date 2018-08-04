@@ -1,0 +1,187 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+//Import fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+$primary-color: #333;
+h2, h3, h3 a {
+  color: $primary;
+  font-family: $monteserrat;
+}
+/*GLOBAL styles*/
+body {
+  font-family: $opensans !important;
+}
+.btn-secondary, .page-item.active .page-link {
+  background-color: $verange;
+  border-color: #ffffff;
+}
+.section-heading {
+  font-size: 3rem;
+}
+.section-description {
+  padding: 1em 0em;
+}
+//Navbar
+.navbar-brand {
+  font-family: $opensans;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+ img {
+  max-height: 60px;
+  width: auto;
+ }
+} 
+
+//Front page slider background 
+/*
+.slider {
+  margin-top: 85px; //offset navbar
+}
+*/
+.background-mask {
+  background-color: rgba(172, 171, 171, 0.6);
+  height: 100%;
+  position: relative;
+  padding: 20px 20px;
+  z-index: 2;
+}
+
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+.fill{
+  height: 85vh;
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: .6s;
+  transition-property: opacity;
+ }
+
+/* keep full widget on smaller screens */
+@media (max-width: 767px) { 
+	body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media screen and (orientation:portrait) { height: 100vh;
+  width: 100vw; }
+@media screen and (orientation:landscape) {height: 100vh;
+  width: 100vw; }
+
+/* LOGO front page */
+ /*.frame {
+  height: 500px;      equals max image height 
+  white-space: nowrap;
+  text-align: center; margin: 1em 0;
+*/
+.helper {
+  margin-left: -30px; //align logo
+}
+.carousel-item .helper img {
+  max-height: 450px;
+  min-width: auto;
+}
+.carousel-caption {
+  h2 {
+    font-size: 3rem;
+    font-family: $monteserrat;
+    font-weight: bold;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+.logo-block{
+  padding-bottom:45px;
+
+  h1 {
+    font-family: $opensans;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3.5rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 767px) { 
+  .carousel-item .helper img {
+    max-height: 250px;
+    min-width: auto;
+  }
+  .logo-block{
+    padding-bottom:30px;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  .carousel-caption {
+    h2 {
+      font-size: 2.3rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* Single page and posts fix*/
+.page-single, .post-single {
+  padding-top: 100px;
+}
+/* Pagination */
+.pagination {
+  padding-top: 2em;
+}
+/* Cards */
+.card-full {
+  padding-bottom:1em; 
+}
+.card-top {
+  img {
+    max-height: 180px;
+  }
+}
+.card-body  {
+  text-align: center;
+  .btn {
+    margin-top: 1em;
+  }
+}
+/*Contact us*/
+.wpcf7 input[type=submit] {
+  color: #fff;
+  background-color: $verange ;
+  max-width: 250px;
+}
+/* Quick single */
+.post-img {
+  min-height: 200px;
+  padding-bottom: 30px;
+}
+.single-content {
+  padding-top: 3rem;
+}
+/* Footer */
+.footer-widget {
+  img {
+    width: auto;
+    height: auto;
+    max-height: 200px;
+  }
+}
+.footer-wrapper {
+  background-color: $primary;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+
+}
