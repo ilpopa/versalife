@@ -8,6 +8,7 @@
 ?>
 <!--Dynamic query listing posts from "cards" category-->
 <?php
+$cardcounter = 0;
 $args = array(
 'orderby'          => 'date',
 'order'            => 'ASC',
@@ -27,7 +28,7 @@ while ( $cardsQuery->have_posts() ) {
     <div class="col-lg-4 col-md-6 card-full">
         <!--Card-->
         <a href="<?php echo get_permalink() ?>">
-        <div class="card">
+        <div class="card wow flipInY" data-wow-duration="1.5s" data-wow-delay="<?php echo $cardcounter?>s">
 
             <!--Card image-->
             <div class="card-top">
@@ -52,6 +53,7 @@ while ( $cardsQuery->have_posts() ) {
     </div>
     <!--/.Auto generated columnn-->
     <?php
+    $cardcounter += 0.5;
 }
 wp_reset_postdata();
 } ?>

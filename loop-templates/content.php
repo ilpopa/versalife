@@ -14,10 +14,10 @@
 	<?php if (has_post_thumbnail( )) { ?> <!-- Check if post has featured image -->
 
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-6  wow fadeInLeft">
 			<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 wow fadeInRight">
 			<header class="entry-header">
 
 				<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
@@ -57,6 +57,7 @@
 	</div> <!-- row -->
 	<!-- No image -->
 	<?php } else { ?>
+		<div class="wow fadeInUp">
 		<header class="entry-header">
 
 		<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
@@ -91,6 +92,7 @@
 		<?php understrap_entry_footer(); ?>
 
 		</footer><!-- .entry-footer -->
+		</div>
 	<?php }  ?>
 
 </article><!-- #post-## -->

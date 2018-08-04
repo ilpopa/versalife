@@ -52,7 +52,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
-
+<script>
+	new WOW().init();
+</script>
 </body>
 
 </html>

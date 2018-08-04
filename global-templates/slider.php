@@ -37,7 +37,7 @@ if ( $carouselQuery->have_posts() ) {
         </div>
         <?php if
         ($counter == 1) { ?>
-        <div class="carousel-caption d-md-block logo-block">
+        <div class="carousel-caption d-md-block logo-block wow fadeIn" data-wow-duration="2s">
             <p><?php echo get_the_content();?></p>
             <h1 class="text-dark"><?php  echo get_the_title(); ?></h1>
             <h4 class="text-dark">Building better future</h4>
