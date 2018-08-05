@@ -1,3 +1,7 @@
+Demo site at: http://178.128.249.172
+
+Wordpress theme built on Understrap
+
 Travis build: [![Build Status](https://travis-ci.org/understrap/understrap.svg?branch=master)](https://travis-ci.org/understrap/understrap)
 
 #### See: [Official Demo](https://understrap.com/understrap) | Read: [Official Docs Page](https://understrap.github.io/)
