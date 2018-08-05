@@ -126,7 +126,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</div>	
 	<!-- About us -->
-	<div class="container">
+	<div class="container" id="about">
 		<section class="contact">
 		<h2 class="section-heading text-center">About Us</h2>
 		<p class="section-description text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.</p>

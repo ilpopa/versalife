@@ -7,7 +7,7 @@
 $primary-color: #333;
 h2, h3, h3 a {
   color: $primary;
-  
+
   font-family: $monteserrat;
 }
 /*GLOBAL styles*/
@@ -84,7 +84,7 @@ body {
 }
 .carousel-item .helper img {
   max-height: 450px;
-  min-width: auto;
+  width: auto;
 }
 .carousel-caption {
   h2 {
@@ -112,7 +112,7 @@ body {
 @media (max-width: 767px) { 
   .carousel-item .helper img {
     max-height: 250px;
-    min-width: auto;
+    width: auto;
   }
   .logo-block{
     padding-bottom:30px;
