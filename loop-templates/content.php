@@ -18,7 +18,7 @@
 			<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 		</div>
 		<div class="col-md-6 wow fadeInRight">
-			<header class="entry-header">
+			<header class="entry-header fp-article-header">
 
 				<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
 				'</a></h2>' ); ?>

@@ -33,7 +33,7 @@ if ( ! function_exists ( 'understrap_setup_theme_default_settings' ) ) {
 // Exclude cards and carousel categories from main loop
 function exclude_categories( $query ) {
     if ( $query->is_home() && $query->is_main_query() ) {
-        $query->set( 'category__not_in', array( 9, 8 ) );  // where 1 and 1347 are IDs of excluded categories
+        $query->set( 'category__not_in', array( 9, 8 ) );  // where 8 and 9 are IDs of excluded categories
     }
 }
 add_action( 'pre_get_posts', 'exclude_categories' );
